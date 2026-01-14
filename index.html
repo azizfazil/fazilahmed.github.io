@@ -3,90 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fazıl Ahmed Azizi</title>
-    <meta name="description" content="Fazıl Ahmed Azizi | Yazılım, Yapay Zekâ, Siber Güvenlik ve Sürekli Öğrenme">
+    <title>Fazıl Ahmed Azizi | Portfolyo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-            background-color: #f9fafb;
-            color: #1f2937;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
-        h1 {
-            font-size: 2.2rem;
-            margin-bottom: 10px;
-        }
-        h2 {
-            font-size: 1.4rem;
-            margin-top: 40px;
-        }
-        p {
-            margin-bottom: 16px;
-        }
-        .subtitle {
-            color: #4b5563;
-            font-size: 1.05rem;
-            margin-bottom: 30px;
-        }
-        footer {
-            margin-top: 60px;
-            font-size: 0.9rem;
-            color: #6b7280;
-        }
+        scroll-behavior: smooth;
+        .gradient-bg { background: linear-gradient(135deg, #1a365d 0%, #2d3748 100%); }
     </style>
 </head>
-<body>
-    <div class="container">
-        <h1>Fazıl Ahmed Azizi</h1>
-        <div class="subtitle">
-            Yazılım · Yapay Zekâ · Siber Güvenlik · Sürekli Öğrenme
+<body class="bg-slate-50 text-slate-800">
+
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md shadow-sm">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <span class="font-bold tracking-tighter text-xl">FAZIL AHMED</span>
+            <div class="space-x-6 hidden md:block text-sm font-medium">
+                <a href="#hakkimda" class="hover:text-blue-600 transition">Hakkımda</a>
+                <a href="#deneyim" class="hover:text-blue-600 transition">Deneyim</a>
+                <a href="#projeler" class="hover:text-blue-600 transition">Projeler</a>
+                <a href="#iletisim" class="hover:text-blue-600 transition">İletişim</a>
+            </div>
         </div>
+    </nav>
 
-        <p>
-            Bu sayfa; öğrenmeye, üretmeye ve fayda oluşturmaya niyet eden bir
-            bilgisayar mühendisliği öğrencisinin dijital not defteri olarak
-            tasarlanmıştır.
-        </p>
+    <header class="pt-32 pb-20 px-6 gradient-bg text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Fazıl Ahmed Azizi</h1>
+            <p class="text-lg opacity-90 font-light max-w-2xl mx-auto leading-relaxed">
+                Bilgisayar Mühendisliği öğrencisi. Teknolojiyi toplumsal faydaya dönüştürmek için çalışan bir öğrenen ve topluluk gönüllüsü.
+            </p>
+            <div class="mt-8 flex justify-center gap-4">
+                <a href="#projeler" class="bg-white text-slate-900 px-6 py-2 rounded-full font-medium text-sm hover:bg-blue-50 transition">Çalışmalarımı İncele</a>
+                <a href="#iletisim" class="border border-white/30 px-6 py-2 rounded-full font-medium text-sm hover:bg-white/10 transition">Tanışalım</a>
+            </div>
+        </div>
+    </header>
 
-        <p>
-            İlgi alanlarım başta yapay zekâ ve siber güvenlik olmak üzere;
-            bulut teknolojileri, blockchain ve doğal dil işleme (NLP) etrafında
-            şekillenmektedir. Bu alanlarda hem bireysel hem de ekip çalışmalarıyla
-            projeler geliştirmekte, öğrendiklerimi paylaşarak derinleştirmeye
-            çalışmaktayım.
-        </p>
+    <section id="hakkimda" class="py-20 px-6 max-w-4xl mx-auto">
+        <h2 class="text-2xl font-bold mb-8 text-slate-900">Hakkımda</h2>
+        <div class="grid md:grid-cols-2 gap-12 items-start">
+            <p class="leading-relaxed text-slate-600">
+                Üretmeyi ve paylaşmayı temel ilke edinmiş bir mühendis adayıyım. Teknoloji dünyasındaki yolculuğumda sadece kod yazmaya değil, aynı zamanda üreten bir neslin yetişmesine katkı sağlamaya odaklanıyorum. <b>Bartın Üniversitesi TEKNOFEST Kulübü</b> bünyesinde topluluk liderliği yaparak beraber öğrenmenin gücüne inanıyorum.
+            </p>
+            <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center"><i class="fas fa-shield-alt text-xs"></i></span>
+                    <span class="text-sm font-medium italic">Siber Vatan İstihdam Programı Öğrencisi</span>
+                </div>
+                <div class="flex items-center gap-3">
+                    <span class="w-8 h-8 rounded-lg bg-green-100 text-green-600 flex items-center justify-center"><i class="fas fa-users text-xs"></i></span>
+                    <span class="text-sm font-medium italic">T3 Vakfı Takımlar Mentörü</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <p>
-            Yazılımı yalnızca teknik bir uğraş olarak değil; insanı, toplumu ve
-            geleceği ilgilendiren uzun vadeli bir sorumluluk alanı olarak görüyorum.
-            Bu nedenle sürdürülebilir, anlaşılır ve geliştirilebilir çözümler üretmeye
-            özel önem veriyorum.
-        </p>
+    <section id="deneyim" class="py-20 bg-white px-6">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-2xl font-bold mb-12">Süreç ve Deneyim</h2>
+            <div class="space-y-12 border-l-2 border-slate-100 pl-8 relative">
+                <div class="relative">
+                    <div class="absolute -left-10 top-1 w-4 h-4 rounded-full bg-blue-600 border-4 border-white"></div>
+                    <h3 class="font-bold text-lg leading-none">BARUTEK & TEKNOFEST Kulübü</h3>
+                    <p class="text-sm text-blue-600 mt-1 mb-3 font-medium">Kurucu Başkan | 2025 - Günümüz</p>
+                    <p class="text-slate-600 text-sm">Üniversite bünyesindeki teknoloji takımlarını bir araya getirerek iş birliği kültürünü geliştirmeye çalışıyorum.</p>
+                </div>
+                <div class="relative">
+                    <div class="absolute -left-10 top-1 w-4 h-4 rounded-full bg-slate-300 border-4 border-white"></div>
+                    <h3 class="font-bold text-lg">T3 Vakfı & Deneyap</h3>
+                    <p class="text-sm text-blue-600 mt-1 mb-3 font-medium">Eğitmen & Takımlar Mentörü</p>
+                    <p class="text-slate-600 text-sm">Genç yeteneklere yazılım teknolojileri ve proje yönetimi konularında rehberlik ederek tecrübelerimi paylaşıyorum.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <h2>Bu Depoda Ne Var?</h2>
-        <p>
-            Bu GitHub alanı; öğrenme sürecimde geliştirdiğim projeleri, denemeleri,
-            notları ve zamanla olgunlaşmasını hedeflediğim fikirleri içermektedir.
-            Her çalışma, bir son üründen ziyade devam eden bir yolculuğun parçasıdır.
-        </p>
+    <section id="projeler" class="py-20 px-6 max-w-5xl mx-auto">
+        <h2 class="text-2xl font-bold mb-12 text-center">Öne Çıkan Çalışmalar</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                <span class="text-[10px] font-bold tracking-widest text-blue-600 uppercase">TEKNOFEST FİNALİST</span>
+                <h3 class="text-xl font-bold mt-2 mb-3">LİSOS Team (NLP)</h3>
+                <p class="text-slate-600 text-sm leading-relaxed mb-4 italic text-sm">
+                    "Türkçe Doğal Dil İşleme üzerine odaklanarak, verilerin anlamlandırılması sürecinde görev aldığım ekip projemiz."
+                </p>
+                <div class="flex gap-2">
+                    <span class="px-3 py-1 bg-slate-100 rounded-md text-[11px]">Python</span>
+                    <span class="px-3 py-1 bg-slate-100 rounded-md text-[11px]">NLP</span>
+                </div>
+            </div>
+            <div class="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+                <span class="text-[10px] font-bold tracking-widest text-blue-600 uppercase">YARI FİNALİST</span>
+                <h3 class="text-xl font-bold mt-2 mb-3">TeknoFinans</h3>
+                <p class="text-slate-600 text-sm leading-relaxed mb-4 italic text-sm">
+                    "Blockchain ve finansal teknolojilerin entegrasyonu üzerine temel kavramları uyguladığımız bir çalışma."
+                </p>
+                <div class="flex gap-2">
+                    <span class="px-3 py-1 bg-slate-100 rounded-md text-[11px]">Blockchain</span>
+                    <span class="px-3 py-1 bg-slate-100 rounded-md text-[11px]">Fintech</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <h2>Yaklaşım</h2>
-        <p>
-            Merak, disiplin ve istikrar. Büyük hedeflerin küçük ama sürekli adımlarla
-            mümkün olduğuna inanıyorum. Öğrenirken öğretmeyi, üretirken paylaşmayı
-            önemsiyorum.
-        </p>
+    <footer id="iletisim" class="py-20 bg-slate-900 text-white px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-2xl font-bold mb-4">İletişime Geçin</h2>
+            <p class="text-slate-400 mb-8 font-light">Fikirlerinizi paylaşmak veya projeler hakkında konuşmak için her zaman mesaj atabilirsiniz.</p>
+            <div class="flex flex-wrap justify-center gap-6">
+                <a href="mailto:fazilahmed0110@gmail.com" class="flex items-center gap-2 hover:text-blue-400 transition">
+                    <i class="fas fa-envelope"></i> <span class="text-sm">E-posta</span>
+                </a>
+                <a href="https://www.linkedin.com/in/fazil-ahmed-azizi-b55b07295/" target="_blank" class="flex items-center gap-2 hover:text-blue-400 transition">
+                    <i class="fab fa-linkedin"></i> <span class="text-sm">LinkedIn</span>
+                </a>
+                <a href="https://www.instagram.com/aziz_fazill" target="_blank" class="flex items-center gap-2 hover:text-blue-400 transition">
+                    <i class="fab fa-instagram"></i> <span class="text-sm">Instagram</span>
+                </a>
+            </div>
+            <div class="mt-16 pt-8 border-t border-white/5 text-[12px] text-slate-500">
+                &copy; 2025 Fazıl Ahmed Azizi. "Farkı fark eden bir bakış açısıyla."
+            </div>
+        </div>
+    </footer>
 
-        <footer>
-            © Fazıl Ahmed Azizi — Öğrenmeye ve üretmeye devam.
-        </footer>
-    </div>
 </body>
 </html>
