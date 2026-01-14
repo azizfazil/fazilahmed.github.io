@@ -1,2 +1,2 @@
 # fazilahmed.github.io
-Kişisel web sitem
+Kişisel web site
