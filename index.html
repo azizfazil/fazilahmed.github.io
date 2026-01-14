@@ -6,229 +6,207 @@
     <title>Fazıl Ahmed Azizi | Portfolyo</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
-        .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); }
-        .hero-gradient { background: radial-gradient(circle at top right, #1e3a8a, #0f172a); }
-        .card-hover { transition: all 0.3s ease; }
-        .card-hover:hover { transform: translateY(-5px); border-color: #3b82f6; }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        /* Modern Koyu Arkaplan */
+        .bg-dark-pro { background-color: #0f172a; } 
+        .card-dark { background: rgba(30, 41, 59, 0.7); border: 1px solid rgba(255, 255, 255, 0.1); backdrop-filter: blur(12px); }
+        .text-gradient { background: linear-gradient(to right, #60a5fa, #a855f7); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .glow { box-shadow: 0 0 20px rgba(59, 130, 246, 0.2); }
     </style>
 </head>
-<body class="bg-slate-50 text-slate-900">
+<body class="bg-dark-pro text-slate-200 leading-relaxed">
 
-    <nav class="fixed w-full z-50 glass border-b border-slate-200">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="flex items-center gap-2">
-                <div class="w-8 h-8 bg-blue-600 rounded-lg flex items-center justify-center text-white font-bold text-sm">FA</div>
-                <span class="font-bold tracking-tight text-lg">Fazıl Ahmed Azizi</span>
+    <nav class="fixed w-full z-50 px-6 py-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center card-dark px-6 py-3 rounded-2xl">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-gradient-to-tr from-blue-600 to-purple-600 rounded-xl flex items-center justify-center font-bold">FA</div>
+                <span class="font-bold tracking-tight text-white hidden sm:block">Fazıl Ahmed Azizi</span>
             </div>
-            <div class="hidden md:flex space-x-8 text-sm font-semibold text-slate-600">
-                <a href="#hakkimda" class="hover:text-blue-600 transition">Hakkımda</a>
-                <a href="#deneyim" class="hover:text-blue-600 transition">Deneyim</a>
-                <a href="#egitim" class="hover:text-blue-600 transition">Eğitim</a>
-                <a href="#projeler" class="hover:text-blue-600 transition">Projeler</a>
-                <a href="#sertifikalar" class="hover:text-blue-600 transition">Sertifikalar</a>
-                <a href="#iletisim" class="hover:text-blue-600 transition">İletişim</a>
+            <div class="flex gap-6 text-sm font-medium">
+                <a href="#deneyim" class="hover:text-blue-400 transition">Deneyim</a>
+                <a href="#projeler" class="hover:text-blue-400 transition">Projeler</a>
+                <a href="#yetkinlikler" class="hover:text-blue-400 transition">Yetkinlikler</a>
+                <a href="#iletisim" class="hover:text-blue-400 transition">İletişim</a>
             </div>
         </div>
     </nav>
 
-    <header class="pt-32 pb-20 px-6 hero-gradient text-white">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+    <header class="pt-40 pb-24 px-6 relative overflow-hidden">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
             <div>
-                <span class="bg-blue-500/20 text-blue-300 px-4 py-1 rounded-full text-xs font-bold tracking-widest uppercase">Bilgisayar Mühendisi Adayı</span>
-                <h1 class="text-5xl font-bold mt-6 leading-tight italic text-blue-100">"Farkı fark eden bir bakış açısıyla..."</h1>
-                <p class="mt-6 text-slate-300 text-lg leading-relaxed font-light">
-                    Teknoloji ekosistemine değer katmayı hedefleyen, bulut güvenliği ve yapay zeka üzerine projeler üreten bir öğrenen. Topluluk liderliği ve gönüllülük esaslı çalışmalarla yarının teknolojisini bugünden inşa etmeye odaklı.
+                <h2 class="text-blue-400 font-semibold tracking-widest uppercase text-sm mb-4">Milli Teknoloji Hamlesi Vizyonuyla</h2>
+                <h1 class="text-5xl md:text-6xl font-extrabold text-white mb-6 leading-tight">
+                    Farkı fark eden bir <span class="text-gradient">bakış açısıyla.</span>
+                </h1>
+                <p class="text-slate-400 text-lg mb-8">
+                    Bilgisayar Mühendisliği öğrencisi. <strong>Siber Vatan</strong> öğrencisi, <strong>T3 Vakfı</strong> Mentörü ve <strong>BARUTEK</strong> Kurucusu. Yapay Zeka güvenliği ve Bulut Bilişim üzerine odaklanan bir teknoloji tutkunu.
                 </p>
-                <div class="mt-10 flex gap-4">
-                    <a href="#projeler" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-xl font-semibold transition shadow-lg shadow-blue-900/20">Çalışmaları Gör</a>
-                    <a href="mailto:fazilahmed0110@gmail.com" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white px-8 py-3 rounded-xl font-semibold transition">Bana Ulaşın</a>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#iletisim" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-xl font-bold transition glow">İletişime Geç</a>
+                    <a href="#projeler" class="bg-slate-800 text-white px-8 py-3 rounded-xl font-bold border border-slate-700 hover:bg-slate-700 transition">Projeleri İncele</a>
                 </div>
             </div>
-            <div class="hidden md:block relative">
-                <div class="absolute inset-0 bg-blue-500 blur-[100px] opacity-20"></div>
-                <div class="relative bg-slate-800/50 border border-white/10 p-8 rounded-3xl backdrop-blur-xl">
-                    <pre class="text-sm text-blue-300 font-mono"><code><span class="text-pink-400">class</span> <span class="text-yellow-300">Developer</span>:
-    <span class="text-pink-400">def</span> <span class="text-blue-400">__init__</span>(self):
-        self.name = <span class="text-green-400">"Fazil Ahmed"</span>
-        self.focus = [<span class="text-green-400">"AI"</span>, <span class="text-green-400">"Security"</span>]
-        self.role = <span class="text-green-400">"Leader at BARUTEK"</span>
-
-    <span class="text-pink-400">def</span> <span class="text-blue-400">vision</span>(self):
-        <span class="text-pink-400">return</span> <span class="text-green-400">"Creating Social Impact"</span></code></pre>
+            <div class="flex justify-center relative">
+                <div class="w-64 h-64 md:w-80 md:h-80 rounded-[2.5rem] rotate-3 bg-gradient-to-tr from-blue-600 to-purple-600 p-1 glow">
+                    <div class="w-full h-full rounded-[2.3rem] bg-slate-900 overflow-hidden -rotate-3 transition hover:rotate-0 duration-500">
+                        <img src="https://via.placeholder.com/400" alt="Fazıl Ahmed Azizi" class="w-full h-full object-cover opacity-80 hover:opacity-100 transition">
+                    </div>
                 </div>
             </div>
         </div>
     </header>
 
-    <main class="max-w-6xl mx-auto px-6 space-y-32 py-24">
+    <main class="max-w-6xl mx-auto px-6 space-y-32">
 
-        <section id="hakkimda" class="grid md:grid-cols-3 gap-12 items-start">
-            <h2 class="text-3xl font-bold text-slate-900 sticky top-24">Hakkımda</h2>
-            <div class="md:col-span-2 space-y-6 text-slate-600 leading-relaxed text-lg">
-                <p>
-                    Bartın Üniversitesi Bilgisayar Mühendisliği öğrencisiyim. Teknolojiye duyduğum merakı, toplumsal farkındalık ve gönüllülük esaslı çalışmalarla birleştiriyorum. Sadece kod üretmek değil, üreten bir neslin vizyonuna katkıda bulunmak en büyük motivasyonum.
-                </p>
-                <div class="grid grid-cols-2 gap-4 pt-4">
-                    <div class="p-4 bg-white border border-slate-100 rounded-2xl shadow-sm">
-                        <div class="text-blue-600 font-bold text-xl">2+</div>
-                        <div class="text-sm text-slate-500">Yıl Topluluk Deneyimi</div>
-                    </div>
-                    <div class="p-4 bg-white border border-slate-100 rounded-2xl shadow-sm">
-                        <div class="text-blue-600 font-bold text-xl">100+</div>
-                        <div class="text-sm text-slate-500">Mentörlük Verilen Genç</div>
-                    </div>
-                </div>
+        <section class="grid md:grid-cols-3 gap-12 border-y border-slate-800 py-16">
+            <div class="card-dark p-8 rounded-3xl">
+                <h3 class="text-3xl font-bold text-white mb-2">100+</h3>
+                <p class="text-slate-400 text-sm italic">Eğitim ve Mentorluk ile ulaşılan teknoloji gönüllüsü.</p>
+            </div>
+            <div class="card-dark p-8 rounded-3xl">
+                <h3 class="text-3xl font-bold text-white mb-2">Finalist</h3>
+                <p class="text-slate-400 text-sm italic">TEKNOFEST Türkçe Doğal Dil İşleme (NLP) başarısı.</p>
+            </div>
+            <div class="card-dark p-8 rounded-3xl">
+                <h3 class="text-3xl font-bold text-white mb-2">Kurucu</h3>
+                <p class="text-slate-400 text-sm italic">BARUTEK ve TEKNOFEST Kulübü Kurucu Başkanı.</p>
             </div>
         </section>
 
         <section id="deneyim">
-            <h2 class="text-3xl font-bold mb-12">Deneyim ve Liderlik</h2>
-            <div class="space-y-6">
-                <div class="bg-white p-8 rounded-2xl border border-slate-200 card-hover">
-                    <div class="flex justify-between items-start mb-4">
-                        <div>
-                            <h3 class="text-xl font-bold">Bartın Üniversitesi TEKNOFEST Kulübü</h3>
-                            <p class="text-blue-600 font-medium italic">Kurucu Başkan</p>
-                        </div>
-                        <span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Şubat 2025 - Günümüz</span>
+            <h2 class="text-3xl font-bold text-white mb-12 flex items-center gap-4">
+                <span class="w-12 h-1 bg-blue-600 rounded"></span> Profesyonel Serüven
+            </h2>
+            <div class="space-y-8">
+                <div class="card-dark p-8 rounded-3xl transition hover:border-blue-500/50">
+                    <div class="flex flex-col md:flex-row justify-between mb-4">
+                        <h3 class="text-xl font-bold text-white">TEKNOFEST Kulübü / BARUTEK</h3>
+                        <span class="text-blue-400 text-sm font-mono uppercase tracking-widest">Şubat 2025 - Günümüz</span>
                     </div>
-                    <p class="text-slate-600 text-sm italic">"Üniversite bünyesindeki teknoloji takımları arasında köprü kurarak, ortak çalışma kültürünü teşvik ediyorum."</p>
+                    <p class="text-blue-300 font-medium mb-4 italic">Kurucu Başkan</p>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Bartın Üniversitesi bünyesindeki teknoloji topluluklarını bir araya getiren İstişare Birliği'nin temellerini attım. TEKNOFEST süreçlerinin yönetimi ve koordinasyonunu yürütüyorum.
+                    </p>
                 </div>
 
-                <div class="bg-white p-8 rounded-2xl border border-slate-200 card-hover">
-                    <div class="flex justify-between items-start mb-4">
-                        <div>
-                            <h3 class="text-xl font-bold">T3 Vakfı / Deneyap Türkiye</h3>
-                            <p class="text-blue-600 font-medium italic">Eğitmen & Takımlar Mentörü</p>
-                        </div>
-                        <span class="text-xs font-bold text-slate-400 uppercase tracking-widest">Kasım 2024 - Günümüz</span>
+                <div class="card-dark p-8 rounded-3xl transition hover:border-blue-500/50">
+                    <div class="flex flex-col md:flex-row justify-between mb-4">
+                        <h3 class="text-xl font-bold text-white">SİBERAS (Siber Güvenlik ve Yapay Zeka)</h3>
+                        <span class="text-blue-400 text-sm font-mono uppercase tracking-widest">2023 - 2025</span>
                     </div>
-                    <p class="text-slate-600 text-sm italic text-sm leading-relaxed">Yeni nesil teknoloji takımlarına proje geliştirme ve yazılım teknolojileri konularında rehberlik sağlıyorum.</p>
+                    <p class="text-blue-300 font-medium mb-4 italic">Yönetim Kurulu Başkan Yrd. / Proje Yöneticisi</p>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Yapay zeka (AI), Cyber Security ve Cloud Computing alanlarında eğitimlerin organize edilmesi, NLP ve Blockchain projelerinin yönetim süreçlerinde aktif rol aldım.
+                    </p>
+                </div>
+
+                <div class="card-dark p-8 rounded-3xl transition hover:border-blue-500/50">
+                    <div class="flex flex-col md:flex-row justify-between mb-4">
+                        <h3 class="text-xl font-bold text-white">T3 Vakfı & Deneyap Türkiye</h3>
+                        <span class="text-blue-400 text-sm font-mono uppercase tracking-widest">Kasım 2024 - Günümüz</span>
+                    </div>
+                    <p class="text-blue-300 font-medium mb-4 italic">Yazılım Teknolojileri Eğitmeni & Takımlar Mentörü</p>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Geleceğin mühendis adaylarına mentörlük yaparak proje yönetimi ve teknoloji entegrasyonu konularında rehberlik ediyorum.
+                    </p>
                 </div>
             </div>
         </section>
 
-        <section id="egitim" class="grid md:grid-cols-3 gap-12 border-t pt-24 border-slate-200">
-            <h2 class="text-3xl font-bold">Eğitim</h2>
-            <div class="md:col-span-2">
-                <div class="relative pl-8 border-l-2 border-blue-600">
-                    <div class="absolute -left-[9px] top-0 w-4 h-4 bg-blue-600 rounded-full"></div>
-                    <h3 class="text-xl font-bold">Bartın Üniversitesi</h3>
-                    <p class="text-slate-500 mt-1 italic">Bilgisayar Mühendisliği | 2023 - 2027</p>
-                    <div class="mt-4 flex gap-2">
-                        <span class="bg-slate-200 px-3 py-1 rounded text-[10px] font-bold">GPA: Aktif</span>
-                        <span class="bg-slate-200 px-3 py-1 rounded text-[10px] font-bold">BARUTEK Kurucusu</span>
+        <section id="yetkinlikler" class="grid md:grid-cols-2 gap-12">
+            <div>
+                <h2 class="text-2xl font-bold text-white mb-8">Teknik Uzmanlık</h2>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-slate-800/50 p-4 rounded-2xl border border-slate-700">
+                        <i class="fas fa-microchip text-blue-500 mb-2"></i>
+                        <p class="text-xs text-slate-400">Yapay Zeka</p>
+                        <p class="font-bold text-sm">NLP & Deep Learning</p>
+                    </div>
+                    <div class="bg-slate-800/50 p-4 rounded-2xl border border-slate-700">
+                        <i class="fas fa-cloud text-blue-500 mb-2"></i>
+                        <p class="text-xs text-slate-400">Bulut Bilişim</p>
+                        <p class="font-bold text-sm">Cloud Security</p>
+                    </div>
+                    <div class="bg-slate-800/50 p-4 rounded-2xl border border-slate-700">
+                        <i class="fas fa-link text-blue-500 mb-2"></i>
+                        <p class="text-xs text-slate-400">Blockchain</p>
+                        <p class="font-bold text-sm">Smart Contracts</p>
+                    </div>
+                    <div class="bg-slate-800/50 p-4 rounded-2xl border border-slate-700">
+                        <i class="fas fa-user-shield text-blue-500 mb-2"></i>
+                        <p class="text-xs text-slate-400">Siber Güvenlik</p>
+                        <p class="font-bold text-sm">Reverse Engineering</p>
                     </div>
                 </div>
             </div>
-        </section>
-
-        <section class="grid md:grid-cols-2 gap-16 border-t pt-24 border-slate-200">
             <div>
-                <h2 class="text-2xl font-bold mb-8">Teknik Yetkinlikler</h2>
-                <div class="flex flex-wrap gap-3">
-                    <span class="px-4 py-2 bg-blue-50 text-blue-700 rounded-xl text-sm font-semibold border border-blue-100">Yapay Zeka & NLP</span>
-                    <span class="px-4 py-2 bg-blue-50 text-blue-700 rounded-xl text-sm font-semibold border border-blue-100">Bulut Güvenliği</span>
-                    <span class="px-4 py-2 bg-blue-50 text-blue-700 rounded-xl text-sm font-semibold border border-blue-100">Blockchain</span>
-                    <span class="px-4 py-2 bg-blue-50 text-blue-700 rounded-xl text-sm font-semibold border border-blue-100">Sızma Testleri</span>
-                    <span class="px-4 py-2 bg-blue-50 text-blue-700 rounded-xl text-sm font-semibold border border-blue-100">Python</span>
-                </div>
-            </div>
-            <div>
-                <h2 class="text-2xl font-bold mb-8">Diller</h2>
+                <h2 class="text-2xl font-bold text-white mb-8">Dil Yetkinlikleri</h2>
                 <div class="space-y-4">
-                    <div class="flex justify-between items-center bg-white p-3 rounded-xl border border-slate-100">
-                        <span class="font-medium">Türkçe / Farsça</span>
-                        <span class="text-xs text-blue-600 font-bold bg-blue-50 px-2 py-1 rounded">Ana Dil</span>
+                    <div class="flex justify-between items-center bg-slate-800/30 p-4 rounded-2xl border border-slate-700">
+                        <span class="font-medium">Türkçe & Darice-Farsça</span>
+                        <span class="px-3 py-1 bg-blue-600/20 text-blue-400 text-[10px] font-bold rounded-lg uppercase tracking-tighter">Ana Dil</span>
                     </div>
-                    <div class="flex justify-between items-center bg-white p-3 rounded-xl border border-slate-100">
+                    <div class="flex justify-between items-center bg-slate-800/30 p-4 rounded-2xl border border-slate-700">
                         <span class="font-medium">Özbekçe</span>
-                        <span class="text-xs text-blue-600 font-bold bg-blue-50 px-2 py-1 rounded">İleri Seviye</span>
+                        <span class="px-3 py-1 bg-green-600/20 text-green-400 text-[10px] font-bold rounded-lg uppercase tracking-tighter">İleri Seviye</span>
                     </div>
-                    <div class="flex justify-between items-center bg-white p-3 rounded-xl border border-slate-100">
+                    <div class="flex justify-between items-center bg-slate-800/30 p-4 rounded-2xl border border-slate-700">
                         <span class="font-medium">İngilizce</span>
-                        <span class="text-xs text-slate-500 font-bold bg-slate-50 px-2 py-1 rounded">Temel</span>
+                        <span class="px-3 py-1 bg-slate-700 text-slate-400 text-[10px] font-bold rounded-lg uppercase tracking-tighter">Gelişimde</span>
                     </div>
                 </div>
             </div>
         </section>
 
         <section id="projeler">
-            <h2 class="text-3xl font-bold mb-12">Projeler</h2>
+            <h2 class="text-3xl font-bold text-white mb-12">Projeler & Başarılar</h2>
             <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white p-10 rounded-3xl border border-slate-200 shadow-sm relative overflow-hidden group">
-                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition">
-                        <i class="fas fa-brain text-6xl"></i>
-                    </div>
-                    <span class="text-blue-600 text-[10px] font-bold tracking-widest uppercase">TEKNOFEST Finalist</span>
-                    <h3 class="text-2xl font-bold mt-4 mb-4">LİSOS Team (NLP)</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-6 italic">Türkçe Doğal Dil İşleme tekniklerini kullanarak metin analizi yapan yenilikçi bir çözüm.</p>
-                    <div class="flex gap-2">
-                        <span class="bg-slate-100 px-3 py-1 rounded text-[10px]">Python</span>
-                        <span class="bg-slate-100 px-3 py-1 rounded text-[10px]">NLTK</span>
-                    </div>
+                <div class="card-dark p-8 rounded-[2rem] relative overflow-hidden group">
+                    <div class="absolute -right-8 -bottom-8 w-32 h-32 bg-blue-600/10 rounded-full blur-3xl group-hover:bg-blue-600/20 transition duration-700"></div>
+                    <span class="text-blue-400 text-xs font-bold tracking-widest uppercase">TEKNOFEST Finalist</span>
+                    <h3 class="text-2xl font-bold text-white mt-4">LİSOS Team (NLP)</h3>
+                    <p class="text-slate-400 mt-4 text-sm leading-relaxed italic">
+                        Türkçe Doğal Dil İşleme alanında geliştirdiğimiz proje ile TEKNOFEST'te final derecesi elde edildi. Proje yöneticisi ve geliştirici olarak görev aldım.
+                    </p>
                 </div>
-                <div class="bg-white p-10 rounded-3xl border border-slate-200 shadow-sm relative overflow-hidden group">
-                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition">
-                        <i class="fas fa-link text-6xl"></i>
-                    </div>
-                    <span class="text-blue-600 text-[10px] font-bold tracking-widest uppercase">Finansal Teknolojiler</span>
-                    <h3 class="text-2xl font-bold mt-4 mb-4">TeknoFinans</h3>
-                    <p class="text-slate-600 text-sm leading-relaxed mb-6 italic">Blockchain tabanlı şeffaf finansal süreçlerin yönetimi üzerine bir geliştirme çalışması.</p>
-                    <div class="flex gap-2">
-                        <span class="bg-slate-100 px-3 py-1 rounded text-[10px]">Blockchain</span>
-                        <span class="bg-slate-100 px-3 py-1 rounded text-[10px]">Smart Contracts</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="sertifikalar" class="border-t pt-24 border-slate-200">
-            <h2 class="text-3xl font-bold mb-12">Sertifikalar ve Başarılar</h2>
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="flex items-start gap-4 p-4 bg-white rounded-2xl border border-slate-100">
-                    <i class="fas fa-certificate text-blue-600 mt-1"></i>
-                    <div>
-                        <h4 class="font-bold text-sm">Siber Vatan Eğitimleri</h4>
-                        <p class="text-[11px] text-slate-500">Reverse Engineering, Web Security</p>
-                    </div>
-                </div>
-                <div class="flex items-start gap-4 p-4 bg-white rounded-2xl border border-slate-100">
-                    <i class="fas fa-medal text-blue-600 mt-1"></i>
-                    <div>
-                        <h4 class="font-bold text-sm">Deneyap Mentorluk</h4>
-                        <p class="text-[11px] text-slate-500">T3 Vakfı Mentor Sertifikası</p>
-                    </div>
-                </div>
-                <div class="flex items-start gap-4 p-4 bg-white rounded-2xl border border-slate-100">
-                    <i class="fas fa-trophy text-blue-600 mt-1"></i>
-                    <div>
-                        <h4 class="font-bold text-sm">Milli Teknoloji Zirvesi</h4>
-                        <p class="text-[11px] text-slate-500">2025 Katılım ve Başarı</p>
-                    </div>
+                <div class="card-dark p-8 rounded-[2rem] relative overflow-hidden group">
+                    <div class="absolute -right-8 -bottom-8 w-32 h-32 bg-purple-600/10 rounded-full blur-3xl group-hover:bg-purple-600/20 transition duration-700"></div>
+                    <span class="text-purple-400 text-xs font-bold tracking-widest uppercase">TEKNOFEST Yarı Finalist</span>
+                    <h3 class="text-2xl font-bold text-white mt-4">TeknoFinans</h3>
+                    <p class="text-slate-400 mt-4 text-sm leading-relaxed italic">
+                        Blockchain tabanlı finansal şeffaflık ve güvenlik çözümleri üzerine odaklanan, Fintech yarışmasında yarı finalistlik derecesi kazanan ekip çalışmamız.
+                    </p>
                 </div>
             </div>
         </section>
 
     </main>
 
-    <footer id="iletisim" class="bg-slate-900 text-white py-20 px-6">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
+    <footer id="iletisim" class="mt-32 border-t border-slate-800 bg-slate-900/50 py-20 px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
             <div>
-                <h2 class="text-3xl font-bold mb-4">Yeni projelere hazırız.</h2>
-                <p class="text-slate-400 font-light">Tanışmak veya fikir alışverişi yapmak için çekinmeden yazabilirsiniz.</p>
+                <h2 class="text-4xl font-bold text-white mb-6">Yeni vizyonlara <span class="text-gradient">birlikte yol alalım.</span></h2>
+                <p class="text-slate-400 mb-8 max-w-sm">Teknoloji odaklı iş birliği, mentorluk veya sadece tanışmak için bana aşağıdaki kanallardan ulaşabilirsiniz.</p>
+                <div class="flex gap-6 text-2xl">
+                    <a href="https://www.linkedin.com/in/fazil-ahmed-azizi-b55b07295/" target="_blank" class="hover:text-blue-400 transition"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/aziz_fazill" target="_blank" class="hover:text-pink-400 transition"><i class="fab fa-instagram"></i></a>
+                    <a href="mailto:fazilahmed0110@gmail.com" class="hover:text-red-400 transition"><i class="fas fa-envelope"></i></a>
+                </div>
             </div>
-            <div class="flex gap-8 text-2xl">
-                <a href="mailto:fazilahmed0110@gmail.com" class="hover:text-blue-400 transition"><i class="fas fa-envelope"></i></a>
-                <a href="https://www.linkedin.com/in/fazil-ahmed-azizi-b55b07295/" class="hover:text-blue-400 transition"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/aziz_fazill" class="hover:text-blue-400 transition"><i class="fab fa-instagram"></i></a>
+            <div class="bg-slate-800/40 p-8 rounded-3xl border border-slate-700">
+                <p class="text-sm text-slate-300 font-medium mb-2">Fazıl Ahmed Azizi</p>
+                <p class="text-xs text-slate-500 mb-6 uppercase tracking-widest leading-relaxed">
+                    BARTIN UNIVERSITY<br>COMPUTER ENGINEERING STUDENT
+                </p>
+                <p class="text-[10px] text-slate-600 font-mono tracking-tighter italic">
+                    "Creating social impact through intelligent systems and secure cloud infrastructure."
+                </p>
             </div>
         </div>
-        <div class="max-w-6xl mx-auto mt-20 pt-8 border-t border-white/5 text-center text-[10px] text-slate-500 tracking-widest uppercase">
-            &copy; 2025 Fazıl Ahmed Azizi | BARTIN UNIVERSITY COMPUTER ENGINEERING
+        <div class="text-center mt-20 text-[10px] text-slate-700 uppercase tracking-[0.3em]">
+            &copy; 2025 | Developed by FAZIL AHMED AZİZİ
         </div>
     </footer>
 
